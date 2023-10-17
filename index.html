@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página || Fitness</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-[#eeeeee] font-sans">
+
+    <header class="w-full fixed top-0 left-0 z-[100] bg-transparent">
+        <nav class="flex justify-end items-center h-20 px-6">
+            <div id="nav-menu"
+                class="fixed inset-0 z-[100] ocultar-menu w-full px-10 py-24 bg-[#4e4feb] text-white md:top-5 md:left-[73%] md:w-[25%] md:h-[90%] md:rounded-b-xl">
+                <ul class="flex flex-col gap-4">
+                    <li>
+                        <div class="flex items-center sub-menu">
+                            <i class='bx bxs-dashboard mr-1'></i>
+                            <span class="font-semibold text-lg cursor-pointer">Inicio
+                                <img src="./assets/img/icons/icon-arrow.svg" alt="" class="list-arrow">
+                            </span>
+                        </div>
+
+                        <ul class="ul-lista font-medium">
+                            <li>
+                                <a href="#">Items 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Items 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Items 1</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="flex items-center sub-menu">
+                            <i class='bx bxs-receipt mr-1'></i>
+                            <span class="font-semibold text-lg cursor-pointer">Servicios
+                                <img src="./assets/img/icons/icon-arrow.svg" alt="" class="list-arrow">
+                            </span>
+                        </div>
+
+                        <ul class="ul-lista font-medium">
+                            <li>
+                                <a href="#">Items 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Items 1</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="font-semibold flex items-center text-lg">
+                        <i class='bx bxs-bell mr-1'></i>
+                        <a href="#">Notificaciones</a>
+                    </li>
+
+                    <li class="font-semibold flex items-center text-lg">
+                        <i class='bx bxs-message-alt-dots mr-1'></i>
+                        <a href="#">Contacto</a>
+                    </li>
+
+                    <li class="cta-menu-mobile cursor-pointer">
+                        <a href="#">Iniciar Sesión</a>
+                    </li>
+
+                    <li class="cta-menu-mobile cursor-pointer">
+                        <a href="#">Registrarse</a>
+                    </li>
+
+                </ul>
+                <div class="absolute top-5 right-6 cursor-pointer text-white hover:text-black duration-500"
+                    id="navclose">
+                    <i class="bx bx-x bx-lg"></i>
+                </div>
+            </div>
+            <div id="navopen" class="cursor-pointer text-white md:text-black md:hover:text-[#4e4feb] duration-500">
+                <i class="bx bx-grid-alt bx-md"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="md:flex">
+        <section class="bg-[#4e4feb] w-full h-64 p-7 md:w-[30%] md:h-screen">
+            <span class="text-xl font-bold text-white">StudiosDev</span>
+            <div class="hidden absolute bottom-16 xl:bottom-[86px] xl:flex flex-col gap-3 text-white">
+                <div>
+                    <span class="font-bold text-base">Email</span>
+                    <p>correo@example.com</p>
+                </div>
+                <div>
+                    <span class="font-bold text-base">Teléfono</span>
+                    <p>123456789</p>
+                </div>
+                <span class="font-bold text-base">Social Media</span>
+                <div class="flex gap-4">
+                    <i class="bx bxl-facebook bx-sm cursor-pointer hover:text-black duration-500 hover:scale-150"></i>
+                    <i class="bx bxl-instagram bx-sm cursor-pointer hover:text-black duration-500 hover:scale-150"></i>
+                    <i class="bx bxl-twitter bx-sm cursor-pointer hover:text-black duration-500 hover:scale-150"></i>
+                    <i class="bx bxl-youtube bx-sm cursor-pointer hover:text-black duration-500 hover:scale-150"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative w-full md:w-[70%] md:h-screen ">
+            <img src="./assets/img/fitness/img1.jpg" alt="fitness"
+                class="absolute w-[340px] left-[50%] transform translate-x-[-50%] translate-y-[-50%] md:left-0 md:top-[50%] md:w-[300px] md:h-[400px] lg:w-[350px] lg:h-[450px] object-cover shadow-md md:shadow-lg md:shadow-black shadow-black">
+
+            <div class="pt-36 px-5 text-center md:ml-40 lg:ml-[220px] lg:w-[70%] md:text-left md:mt-20 lg:mt-10">
+                <h1 class="text-4xl font-bold text-center md:text-left mb-4">Práctica</h1>
+                <p class="text-slate-500 [text-wrap:balance] mb-4">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. sit
+                    amet consectetur adipisicing </p>
+                <p class="text-slate-500 [text-wrap:balance] mb-6">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. A
+                    impedit eius consequatur quo illo
+                    quisquam. Ab quaerat dolore nemo ullam!</p>
+                <div class="flex justify-center gap-5 mt-5 md:justify-start">
+                    <button
+                        class="py-3 px-8 md:py-3 md:px-7 border-2 text-white border-[#4e4feb] rounded-full bg-[#4e4feb] hover:bg-white hover:text-black duration-500 font-bold">Registrarse</button>
+                    <button
+                        class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500">Iniciar
+                        sesión</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
