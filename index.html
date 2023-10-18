@@ -149,7 +149,7 @@
                     <p class="text-slate-500 [text-wrap:balance] my-4">Crea una cuenta para comenzar a practicar una
                         rutina personalizada.</p>
 
-                    <form action="" class="flex flex-col gap-8 text-left">
+                    <form action="" id="form" class="flex flex-col gap-8 text-left">
                         <div>
                             <label for="name" class="block mb-2">Nombres Completos <span
                                     class="text-red-600">*</span></label>
@@ -179,9 +179,9 @@
                                 caracteres especiales.</span>
                         </div>
                         <div>
-                            <label for="password" class="block mb-2">Confirmar contraseña <span
+                            <label for="confirmpassword" class="block mb-2">Confirmar contraseña <span
                                     class="text-red-600">*</span></label>
-                            <input type="password" id="password" placeholder="Confirmar contraseña"
+                            <input type="password" id="confirmpassword" placeholder="Confirmar contraseña"
                                 class="border outline-none md:border-0 md:border-b-2 border-black p-2 w-full">
                         </div>
                         <button type="submit"
@@ -205,21 +205,21 @@
             <div
                 class="relative w-[90%] md:w-[70%] mx-auto h-[500px] md:h-[550px] md:flex md:justify-between overflow-auto bg-white rounded-lg">
                 <img src="./assets/img/fitness/img4.jpg" alt="" class="w-full md:w-[40%] md:h-full object-cover">
-                <div class="p-5 text-center md:pb- md:mr-28 w-[40%]">
+                <div class="p-5 text-center md:pb- md:mr-28 md:w-[40%]">
                     <h1 class="text-4xl font-bold text-center">Iniciar Sesión</h1>
                     <p class="text-slate-500 [text-wrap:balance] my-4 md:my-8">Ingresa tus credenciales</p>
 
                     <form action="" class="flex flex-col gap-8 text-left">
                         <div>
-                            <label for="email" class="block mb-2">Correo Electronico <span
+                            <label for="correo" class="block mb-2">Correo Electronico <span
                                     class="text-red-600">*</span></label>
-                            <input type="email" id="email" placeholder="Ingrese un correo electronico"
+                            <input type="email" id="correo" placeholder="Ingrese un correo electronico"
                                 class="border outline-none md:border-0 md:border-b-2 border-black p-2 w-full">
                         </div>
                         <div>
-                            <label for="password" class="block mb-2">Contraseña <span
+                            <label for="contraseña" class="block mb-2">Contraseña <span
                                     class="text-red-600">*</span></label>
-                            <input type="password" id="password" placeholder="Ingresar una contraseña"
+                            <input type="password" id="contraseña" placeholder="Ingresar una contraseña"
                                 class="border outline-none md:border-0 md:border-b-2 border-black p-2 w-full">
 
                         </div>
@@ -240,6 +240,7 @@
     </section>
 
 
+    <script src="./assets/js/validaciones.js"></script>
     <script src="./assets/js/login.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
