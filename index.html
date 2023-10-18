@@ -65,7 +65,7 @@
                         <a href="#" class="nav-link">Contacto</a>
                     </li>
 
-                    <li class="cta-menu-mobile cursor-pointer nav-link">
+                    <li class="cta-menu-mobile cursor-pointer iniciar nav-link">
                         <a href="#">Iniciar Sesión</a>
                     </li>
 
@@ -85,6 +85,7 @@
         </nav>
     </header>
 
+    <!-- INICIO -->
     <main class="md:flex">
         <section class="bg-[#4e4feb] w-full h-64 p-7 md:w-[30%] md:h-screen">
             <span class="text-xl font-bold text-white">StudiosDev</span>
@@ -124,7 +125,7 @@
                     <button id="registrar"
                         class="py-3 px-8 md:py-3 md:px-7 border-2 text-white border-[#4e4feb] rounded-full bg-[#4e4feb] hover:bg-white hover:text-black duration-500 font-bold registrar">Registrarse</button>
                     <button id="iniciar"
-                        class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500">Iniciar
+                        class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500 iniciar">Iniciar
                         sesión</button>
                 </div>
             </div>
@@ -132,6 +133,7 @@
 
     </main>
 
+    <!-- REGISTRO -->
     <section class="ocultar-registro duration-[.4s]" id="section">
         <div id="overlay" class="bg-[#0000006b] fixed inset-0 z-[100] grid place-items-center">
             <div
@@ -184,6 +186,46 @@
                         </div>
                         <button type="submit"
                             class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500 md:w-[50%] mx-auto mb-7">Registrarse</button>
+                    </form>
+                </div>
+                <div
+                    class="inline-block float-right pb-5 pr-5 text-lg cursor-pointer text-black font-bold md:hidden cerrar">
+                    <button>Cerrar</button>
+                </div>
+                <div class="hidden md:block absolute top-5 right-6 cursor-pointer text-black cerrar" id="">
+                    <i class="bx bx-x bx-lg"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INICIAR SESION -->
+    <section class="ocultar-registro duration-[.4s]" id="section-iniciar">
+        <div id="overlay" class="bg-[#0000006b] fixed inset-0 z-[100] grid place-items-center">
+            <div
+                class="relative w-[90%] md:w-[70%] mx-auto h-[500px] md:h-[550px] md:flex md:justify-between overflow-auto bg-white rounded-lg">
+                <img src="./assets/img/fitness/img4.jpg" alt="" class="w-full md:w-[40%] md:h-full object-cover">
+                <div class="p-5 text-center md:pb- md:mr-28 w-[40%]">
+                    <h1 class="text-4xl font-bold text-center">Iniciar Sesión</h1>
+                    <p class="text-slate-500 [text-wrap:balance] my-4 md:my-8">Ingresa tus credenciales</p>
+
+                    <form action="" class="flex flex-col gap-8 text-left">
+                        <div>
+                            <label for="email" class="block mb-2">Correo Electronico <span
+                                    class="text-red-600">*</span></label>
+                            <input type="email" id="email" placeholder="Ingrese un correo electronico"
+                                class="border outline-none md:border-0 md:border-b-2 border-black p-2 w-full">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2">Contraseña <span
+                                    class="text-red-600">*</span></label>
+                            <input type="password" id="password" placeholder="Ingresar una contraseña"
+                                class="border outline-none md:border-0 md:border-b-2 border-black p-2 w-full">
+
+                        </div>
+                        <button type="submit"
+                            class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500 md:w-[50%] mx-auto mb-7">Iniciar
+                            sesión</button>
                     </form>
                 </div>
                 <div

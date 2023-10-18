@@ -1,5 +1,5 @@
 const btnRegistrar = document.querySelectorAll('.registrar');
-const registro = document.querySelector('#section');
+const registro = document.getElementById('section');
 
 btnRegistrar.forEach((item) => {
     item.addEventListener('click', registrar);
@@ -18,6 +18,25 @@ function registrar() {
     cerrar.forEach((item) => {
         item.addEventListener('click', () => {
             registro.classList.add('ocultar-registro');
+        });
+    });
+};
+
+
+const inicio = document.getElementById('section-iniciar');
+const btnIniciar = document.querySelectorAll('.iniciar');
+
+btnIniciar.forEach((item) => {
+    item.addEventListener('click', iniciar);
+});
+
+function iniciar() {
+    const cerrar = document.querySelectorAll('.cerrar');
+    inicio.classList.remove('ocultar-registro');
+
+    cerrar.forEach((item) => {
+        item.addEventListener('click', () => {
+            inicio.classList.add('ocultar-registro');
         });
     });
 };

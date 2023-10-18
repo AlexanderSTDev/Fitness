@@ -1015,6 +1015,22 @@ img {
   width: 100%;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2849,6 +2865,11 @@ img {
 
   .md\:top-\[50\%\] {
     top: 50%;
+  }
+
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .md\:ml-40 {
