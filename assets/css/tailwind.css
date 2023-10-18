@@ -1015,22 +1015,6 @@ img {
   width: 100%;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2831,11 +2815,6 @@ img {
   text-align: center;
 }
 
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -3002,11 +2981,6 @@ img {
   .md\:hover\:text-\[\#4e4feb\]:hover {
     --tw-text-opacity: 1;
     color: rgb(78 79 235 / var(--tw-text-opacity));
-  }
-
-  .md\:focus\:border-black:focus {
-    --tw-border-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-border-opacity));
   }
 }
 
