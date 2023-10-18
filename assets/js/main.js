@@ -12,7 +12,6 @@ if (navOpen) {
 
 if (navClose) {
     navClose.addEventListener('click', () => {
-        // navMenu.classList.add('ocultar-menu');
         navMenu.classList.remove('scale-in-tr');
         navMenu.classList.add('scale-out-tr');
     });
@@ -45,6 +44,16 @@ submenu.forEach(submenu => {
             height = menu.scrollHeight;
         }
         menu.style.height = `${height}px`;
-        console.log(submenu.style.height);
     });
-})
+});
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+function activeLink() {
+    navMenu.classList.remove('scale-in-tr');
+    navMenu.classList.add('scale-out-tr');
+};
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', activeLink);
+});
