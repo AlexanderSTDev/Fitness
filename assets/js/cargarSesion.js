@@ -61,16 +61,9 @@ function iniciar() {
         const contrasena = document.getElementById('contraseña').value;
 
         const usuariosDB = [
-            {
-                nombre: 'admin',
-                correo: 'admin@example.com',
-                password: '123456789',
-            },
-            {
-                nombre: 'user',
-                correo: 'user@example',
-                password: '123456789',
-            },
+            { nombre: 'admin', correo: 'admin@example.com', password: '123456789', },
+            { nombre: 'user', correo: 'user@example.com', password: '123456789', },
+            { nombre: 'user', correo: 'user2@example.com', password: '123456789', },
         ];
 
         const usuarioEncontrado = usuariosDB.find(user => user.correo === correo && user.password === contrasena);
