@@ -15,7 +15,6 @@ function iniciar() {
                     <div class="p-5 text-center md:pb- md:mr-28 md:w-[40%]">
                         <h1 class="text-4xl font-bold text-center">Iniciar Sesión</h1>
                         <p class="text-slate-500 [text-wrap:balance] my-4 md:my-8">Ingresa tus credenciales</p>
-
                         <form action="" id="form" class="flex flex-col gap-8 text-left">
                             <div>
                                 <label for="correo" class="block mb-2">Correo Electronico <span
@@ -30,6 +29,7 @@ function iniciar() {
                                     class="border outline-none md:border-0 md:border-b-2 border-black p-2 w-full" required>
 
                             </div>
+                            <div id="mensaje-error" class="text-red-500 text-sm"></div>
                             <button type="submit"
                                 class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500 md:w-[50%] mx-auto mb-7">Iniciar
                                 sesión</button>
@@ -59,20 +59,27 @@ function iniciar() {
     function validarUsuario() {
         const correo = document.getElementById('correo').value;
         const contrasena = document.getElementById('contraseña').value;
+        const mensajeError = document.getElementById('mensaje-error');
+        const nombreUsuarioElement = document.getElementById('nombre-usuario');
+        // Limpiar mensajes de error previos
+        mensajeError.textContent = '';
+        nombreUsuarioElement.textContent = '';
 
         const usuariosDB = [
-            { nombre: 'admin', correo: 'admin@example.com', password: '123456789', },
+            { nombre: 'Steven', correo: 'admin@example.com', password: '123456789', },
             { nombre: 'user', correo: 'user@example.com', password: '123456789', },
             { nombre: 'user', correo: 'user2@example.com', password: '123456789', },
         ];
 
         const usuarioEncontrado = usuariosDB.find(user => user.correo === correo && user.password === contrasena);
 
-        if (usuarioEncontrado) {
-            alert('Inicio de sesión exitoso para el usuario: ' + usuarioEncontrado.nombre);
+        if (!correo || !contrasena) {
+            mensajeError.textContent = 'Por favor, completa todos los campos.';
+        } else if (usuarioEncontrado) {
+            nombreUsuarioElement.textContent = `Bienvenido, ${usuarioEncontrado.nombre}!`;
             contenedorSesion.classList.add('ocultar-registro');
         } else {
-            alert('Credenciales incorrectas. Por favor, intenta nuevamente.');
+            mensajeError.textContent = 'Credenciales incorrectas. Por favor, intenta nuevamente.';
         }
 
         /* if (correo === 'usuarioEjemplo@gmail.com' && contrasena === 'contrasenaEjemplo') {
