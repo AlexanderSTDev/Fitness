@@ -31,7 +31,7 @@ function iniciar() {
                             </div>
                             <div id="mensaje-error" class="text-red-500 text-sm"></div>
                             <button type="submit"
-                                class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500 md:w-[50%] mx-auto mb-7">Iniciar
+                                class="py-3 px-7 md:py-3 md:px-7 border-2 border-black rounded-full font-bold hover:text-white hover:bg-black duration-500 md:w-[60%] mx-auto mb-7">Iniciar
                                 sesión</button>
                         </form>
                     </div>
