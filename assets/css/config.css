@@ -79,4 +79,40 @@
    .active-pestanas {
       @apply block;
    }
+
+   .title-rutina {
+      @apply text-xl font-semibold mb-2;
+   }
+
+   .content-publicacion {
+      @apply border border-slate-500/70 rounded-sm p-6 shadow-sm shadow-slate-500 flex-[1_0_auto] w-[50%] mr-5;
+   }
+
+   .seccion-area {
+      grid-template-areas: 
+      "area1"
+      "area2"
+      "area3";
+   }
+
+   .seccion-area-md {
+      grid-template-areas: 
+      "area1   area2"
+      "area3   area2";
+   }
+
+   .footer-area {
+      grid-template-areas: 
+      "form"
+      "menu"
+      "social"
+      "logo"
+      "copyright";
+  }
+
+  .footer-area-md {
+      grid-template-areas: 
+      "logo   menu form"
+      "social menu copyright";
+  }
 }
