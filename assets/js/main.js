@@ -18,7 +18,7 @@ if (navClose) {
 };
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth >= 375 && window.innerWidth <= 768) {
+    if (window.innerWidth <= 768) {
         const scrollY = window.scrollY;
         if (scrollY > 100) {
             navOpen.style.color = '#000';
