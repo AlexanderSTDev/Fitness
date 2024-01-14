@@ -5,6 +5,7 @@ btnIniciar.forEach((item) => {
     item.addEventListener('click', iniciar);
 });
 
+
 function iniciar() {
 
     const plantilla = `
@@ -54,6 +55,11 @@ function iniciar() {
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
         validarUsuario();
+        const btnIniciar = document.querySelectorAll('.iniciar');
+
+        btnIniciar.forEach((item) => {
+            item.classList.add('ocultar-registro');
+        })
     });
 
     function validarUsuario() {
